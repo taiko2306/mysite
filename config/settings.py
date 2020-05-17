@@ -134,6 +134,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 django_heroku.settings(locals())
+"""
 if os.getcwd() == '/app':
     import dj_database_url
     db_from_env = dj_database_url.config(conn_max_age=500)
@@ -144,6 +145,6 @@ if os.getcwd() == '/app':
     #Allow all host headers
     ALLOWED_HOSTS = ['hellolyson.herokuapp.com']
     DEBUG = True
-
+"""
     #Static asset configuration
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
